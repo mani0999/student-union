@@ -15,9 +15,9 @@ app.get("/list", function (request, response){
     response.sendFile(__dirname+"/views/list.html");
 });
 
-// app.get("/message", function (request, response){
-//     response.sendFile(__dirname+"/views/message.html");
-// })
+app.get("/message", function (request, response){
+    response.sendFile(__dirname+"/views/message.html");
+})
 
 app.listen(8081);
 
