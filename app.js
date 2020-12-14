@@ -1,9 +1,11 @@
-var express = require('express');
-var app =express();
+const express = require('express');
+const app =express();
+var path = require("path");
 
-app.get('/', (req, res) => {
-    res.send("welcome")
-})
-app.listen(8081)
+app.get("/", function (request, response){
+    //show this file when the "/" is requested
+    response.sendFile(__dirname+"/views/index.html");
+});
+app.listen(8081);
 
 
